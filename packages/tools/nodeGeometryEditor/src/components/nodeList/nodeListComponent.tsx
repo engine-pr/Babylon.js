@@ -142,6 +142,7 @@ export class NodeListComponent extends React.Component<INodeListComponentProps, 
         DistanceBlock: "Provides a distance vector based on the left and right input vectors",
         Rotate2dBlock: "Rotates UV coordinates around the W axis.",
         LengthBlock: "Outputs the length of an input vector",
+        EntryBlock: "Statement Entry",
     };
 
     private _customFrameList: { [key: string]: string };
