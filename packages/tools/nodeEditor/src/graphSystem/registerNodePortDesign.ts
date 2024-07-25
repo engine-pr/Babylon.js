@@ -39,6 +39,12 @@ export const RegisterNodePortDesign = (stateManager: StateManager) => {
                 img.style.width = "100%"; // it's so that the svg is correctly centered inside the outer circle
                 img.style.height = "100%";
                 break;
+           case NodeMaterialBlockConnectionPointTypes.Statement:
+                img.src =
+                    "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNzIxODQ0MjI1Mzk3IiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjUgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjQyNjEiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjU2LjI1IiBoZWlnaHQ9IjI1NiI+PHBhdGggZD0iTTEwMjQgNjI3LjJjLTEyLjgtNzAuNC01Ny42LTEzMS4yLTE5NS4yLTE4NS42LTQ4LTIyLjQtOTkuMi0zOC40LTExNS4yLTczLjYtNi40LTIyLjQtNi40LTMyLTMuMi00NC44IDkuNi00MS42IDU3LjYtNTQuNCA5OS4yLTQxLjYgMjUuNiA2LjQgNDggMjUuNiA2NCA1Ny42IDY3LjItNDQuOCA2Ny4yLTQ0LjggMTEyLTczLjYtMTYtMjUuNi0yNS42LTM4LjQtMzguNC01MS4yLTQxLjYtNDQuOC05Ni02Ny4yLTE4Mi40LTY3LjJsLTQ0LjggNi40Yy00NC44IDkuNi04Ni40IDM1LjItMTEyIDY0LTczLjYgODMuMi01MS4yIDIyNy4yIDM1LjIgMjg4IDg5LjYgNjcuMiAyMTcuNiA4MCAyMzMuNiAxNDAuOCAxNiA3Ni44LTU3LjYgOTkuMi0xMjggODkuNi01MS4yLTEyLjgtODAtMzguNC0xMTItODYuNGwtMTE4LjQgNjcuMmMxMi44IDMyIDI4LjggNDQuOCA1MS4yIDcwLjQgMTEyIDExMiAzOTUuMiAxMDguOCA0NDYuNC02NCAzLjItNi40IDE2LTQ0LjggNi40LTEwNS42LTEuNiA2LjQgMS42IDkuNiAxLjYgOS42ek00NDAgMTU4LjRoLTE0NHYzNzZjMCA4MCAzLjIgMTUzLjYtOS42IDE3Ni0yMi40IDQ0LjgtNzYuOCAzOC40LTEwMi40IDMyQzE1Ni44IDcyOS42IDE0NCA3MTMuNiAxMjggNjg4Yy0zLjItOS42LTYuNC0xNi02LjQtMTZMMy4yIDc0NS42YzE5LjIgNDEuNiA0OCA3Ni44IDg2LjQgOTkuMiA1NC40IDMyIDEyOCA0NC44IDIwOCAyNS42IDUxLjItMTYgOTIuOC00NC44IDExOC40LTg5LjYgMzItNjAuOCAyNS42LTEzNC40IDI1LjYtMjE3LjZWMTYxLjZjLTEuNiAwLTEuNi0zLjItMS42LTMuMnoiIGZpbGw9IiM4ODg4ODgiIHAtaWQ9IjQyNjIiPjwvcGF0aD48L3N2Zz4=";
+                img.style.width = "100%"; // it's so that the svg is correctly centered inside the outer circle
+                img.style.height = "100%";
+                break;
         }
     };
 };

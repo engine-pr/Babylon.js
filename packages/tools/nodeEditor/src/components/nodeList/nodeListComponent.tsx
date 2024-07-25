@@ -186,6 +186,8 @@ export class NodeListComponent extends React.Component<INodeListComponentProps, 
         MatrixTransposeBlock: "Compute the transpose of a matrix",
         MeshAttributeExistsBlock: "Falls back to secondary input if specified attribute doesn't exists on the rendered mesh",
         CurveBlock: "Apply a curve function",
+        EntryBlock:"Statement Entry"//,
+      //  IfStatement:"If Statement"
     };
 
     private _customFrameList: { [key: string]: string };
@@ -326,6 +328,19 @@ export class NodeListComponent extends React.Component<INodeListComponentProps, 
         const allBlocks: any = {
             Custom_Frames: customFrameNames,
             Custom_Blocks: customBlockNames,
+            Statement: [
+                "EntryBlock"//,
+                //"IfBlock"
+               /* "FogBlock",
+                "CameraPositionBlock",
+                "CameraParametersBlock",
+                "FogColorBlock",
+                "ImageProcessingBlock",
+                "LightBlock",
+                "LightInformationBlock",
+                "ViewDirectionBlock",
+                "SceneDepthBlock",*/
+            ],
             Animation: ["BonesBlock", "MorphTargetsBlock"],
             Color_Management: ["ReplaceColorBlock", "PosterizeBlock", "GradientBlock", "DesaturateBlock"],
             Conversion_Blocks: ["ColorMergerBlock", "ColorSplitterBlock", "VectorMergerBlock", "VectorSplitterBlock"],

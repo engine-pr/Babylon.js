@@ -101,6 +101,8 @@ import { CurveBlock } from "core/Materials/Node/Blocks/curveBlock";
 import { PrePassTextureBlock } from "core/Materials/Node/Blocks/Input/prePassTextureBlock";
 import { NodeMaterialTeleportInBlock } from "core/Materials/Node/Blocks/Teleport/teleportInBlock";
 import { NodeMaterialTeleportOutBlock } from "core/Materials/Node/Blocks/Teleport/teleportOutBlock";
+import { EntryBlock } from "core/Materials/Node/Blocks/Statement/entryBlock";
+//import { IfStatementBlock } from "core/Materials/Node/Blocks/Statement/ifStatementBlock";
 
 export class BlockTools {
     public static GetBlockFromString(data: string, scene: Scene, nodeMaterial: NodeMaterial) {
@@ -660,6 +662,10 @@ export class BlockTools {
                 return new MatrixDeterminantBlock("Determinant");
             case "CurveBlock":
                 return new CurveBlock("Curve");
+            case "EntryBlock":
+                return new EntryBlock("Entry");
+        //    case "IfStatmentBlock":
+         //       return new IfStatementBlock("If");
         }
 
         return null;
@@ -688,6 +694,9 @@ export class BlockTools {
             case NodeMaterialBlockConnectionPointTypes.Object:
                 color = "#6174FA";
                 break;
+        //    case NodeMaterialBlockConnectionPointTypes.Statement:
+         //       color = "#000000";
+          //      break;
         }
 
         return color;
@@ -709,6 +718,8 @@ export class BlockTools {
                 return NodeMaterialBlockConnectionPointTypes.Color3;
             case "Color4":
                 return NodeMaterialBlockConnectionPointTypes.Color4;
+          //  case "Statement":
+           //     return NodeMaterialBlockConnectionPointTypes.Statement;
         }
 
         return NodeMaterialBlockConnectionPointTypes.AutoDetect;
@@ -730,6 +741,8 @@ export class BlockTools {
                 return "Color4";
             case NodeMaterialBlockConnectionPointTypes.Matrix:
                 return "Matrix";
+         //   case NodeMaterialBlockConnectionPointTypes.Statement:
+          //      return "Statement";
         }
 
         return "";
